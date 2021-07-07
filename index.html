@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maygram</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="register-container">
+        <div class="register-box">
+            <h1 class="register-title">Maygramga xush kelibsiz!</h1>
+
+            <form class="register-form">
+                <label for="">Ismingiz...</label>
+                <input type="text" name="user-name" id="user-name" placeholder="Ismingiz..." required>
+                <label for="">Raqamingiz...</label>
+                <input type="number" name="user-number" id="user-number" placeholder="Raqamingiz..." required>
+                <button class="register-submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="chat-container">
+        <div class="chat-interface chat-interface__user">
+            <header class="chat-interface__header">
+                <img class="chat-interface__header-img" src="img/user.jpg" alt="User" width="40" height="40">
+                <h2 class="chat-interface-name chat-interface__user-name">Hojiakbar</h2>
+                <p class="chat-interface__user-number">+998 91 671 60 56</p>
+            </header>
+
+            <ol class="message-list message-list__user">
+                <li class="message-item message-item__right">Hello</li>
+            </ol>
+
+            <form class="chat-form user-form">
+                <input type="text" name="message" id="user-message" placeholder="Message..." required>
+                <button class="send-button" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="chat-interface chat-interface__robot">
+            <header class="chat-interface__header">
+                <img class="chat-interface__header-img" src="img/user.jpg" alt="User" width="40" height="40">
+                <h2 class="chat-interface-name chat-interface__user-name">Ermakvoy</h2>
+            </header>
+
+            <ol class="message-list message-list__robot">
+                <li class="message-item message-item__right">Hello</li>
+            </ol>
+
+            <form class="chat-form robot-form">
+                <input type="text" name="message" id="robot-message" placeholder="Message..." required>
+                <button class="send-button" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
